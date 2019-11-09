@@ -4,6 +4,7 @@ public class FirstClass {
 
 	// TODO Auto-generated method stub
 	public static void main(String[] args) {
+		// sysout 컨트롤 + 스페이스바
 		System.out.println("Hello World");
 		Storage storage = new Storage();
 		storage.num1 = 10;
