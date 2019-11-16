@@ -1,0 +1,55 @@
+package lee.mj.model;
+
+public class SungJuk {
+	String username; //¿Ã∏ß
+	int scratch;
+	int entry;
+	int cLanguage;
+	int java;
+	int python;
+	int math;
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public int getScratch() {
+		return scratch;
+	}
+	public void setScratch(int scratch) {
+		this.scratch = scratch;
+	}
+	public int getEntry() {
+		return entry;
+	}
+	public void setEntry(int entry) {
+		this.entry = entry;
+	}
+	public int getcLanguage() {
+		return cLanguage;
+	}
+	public void setcLanguage(int cLanguage) {
+		this.cLanguage = cLanguage;
+	}
+	public int getJava() {
+		return java;
+	}
+	public void setJava(int java) {
+		this.java = java;
+	}
+	public int getPython() {
+		return python;
+	}
+	public void setPython(int python) {
+		this.python = python;
+	}
+	public int getMath() {
+		return math;
+	}
+	public void setMath(int math) {
+		this.math = math;
+	}
+	
+
+}
