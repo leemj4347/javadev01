@@ -50,6 +50,19 @@ public class SungJuk {
 	public void setMath(int math) {
 		this.math = math;
 	}
-	
+	public int sum() {
+		int result = 0;
+		result += this.scratch;
+		result += this.entry;
+		result += this.cLanguage;
+		result += this.java;
+		result += this.python;
+		result += this.math;
+		return result;
+	}
+	public double average() {
+		double subjects = 6.0;
+		return sum() / subjects;
+	}
 
 }

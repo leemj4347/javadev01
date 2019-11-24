@@ -14,13 +14,17 @@ public class MainClass {
 		 * String print = pick.solution(input);
 		 * 
 		 * System.out.println("가운데글자:"+print);
+		 *
+		 * String input = JOptionPane.showInputDialog("입력:");
+		 * 
+		 * Hashad ha = new Hashad(); boolean print = ha.solution(input);
+		 * 
+		 * System.out.println("하샤드수 :"+print);
 		 */
-		String input = JOptionPane.showInputDialog("입력:");
-		
-		Hashad ha = new Hashad();
-		boolean print = ha.solution(input);
-		
-		System.out.println("하샤드수 :"+print);
+		 String s = JOptionPane.showInputDialog("입력:");
+		 Solution so = new Solution();
+		 String print = so.solution(s);
+		 System.out.println(print);
 	}
 
 }
