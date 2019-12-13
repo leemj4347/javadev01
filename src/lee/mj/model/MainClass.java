@@ -1,11 +1,5 @@
 package lee.mj.model;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-
 public class MainClass {
 
 	public static void main(String[] args) {
@@ -16,52 +10,51 @@ public class MainClass {
 		KimCoding.setEntry(63);
 		KimCoding.setcLanguage(82);
 		KimCoding.setJava(49);
-		KimCoding.setPython(92);
+		KimCoding.setPython(91);
 		KimCoding.setMath(75);
 		
-		SungJuk leeSoen = new SungJuk();
-		leeSoen.setUsername("이소엔");
-		leeSoen.setScratch(58);
+		SungJuk LeeSoen = new SungJuk();
+		LeeSoen.setUsername("이소엔");
+		LeeSoen.setScratch(58);
+		LeeSoen.setEntry(72);
+		LeeSoen.setcLanguage(47);
+		LeeSoen.setJava(92);
+		LeeSoen.setPython(87);
+		LeeSoen.setMath(82);
 		
-		SungJuk sunny = new SungJuk();
-		sunny.setUsername("박써니");
-		sunny.setScratch(86);
+		SungJuk ParkSunny = new SungJuk();
+		ParkSunny.setUsername("박써니");
+		ParkSunny.setScratch(83);
+		ParkSunny.setEntry(81);
+		ParkSunny.setcLanguage(29);
+		ParkSunny.setJava(56);
+		ParkSunny.setPython(92);
+		ParkSunny.setMath(69);
 		
-		SungJuk misun = new SungJuk();
-		misun.setUsername("황미선");
-		misun.setScratch(63);
+		SungJuk HwangIseon = new SungJuk();
+		HwangIseon.setUsername("황이선");
+		HwangIseon.setScratch(63);
+		HwangIseon.setEntry(49);
+		HwangIseon.setcLanguage(86);
+		HwangIseon.setJava(37);
+		HwangIseon.setPython(85);
+		HwangIseon.setMath(64);
 		
-		SungJuk jaesuck =new SungJuk();
-		jaesuck.setUsername("우재석");
-		jaesuck.setScratch(72);
+		SungJuk WooJaesuk = new SungJuk();
+		WooJaesuk.setUsername("우재석");
+		WooJaesuk.setScratch(72);
+		WooJaesuk.setEntry(58);
+		WooJaesuk.setcLanguage(62);
+		WooJaesuk.setJava(59);
+		WooJaesuk.setPython(82);
+		WooJaesuk.setMath(79);
 		
-		List<SungJuk> classList = new ArrayList<SungJuk>();
-		classList.add(KimCoding);
-		classList.add(sunny);
-		classList.add(misun);
-		classList.add(leeSoen);
-		classList.add(jaesuck);
-		
-		for(int i=0; i<classList.size();i++) {
-			SungJuk item = classList.get(i);
-			double ave = item.average();
-			System.out.println(ave);
-		}
-		
-		Map<String, SungJuk> map = new HashMap<String, SungJuk>();
-		map.put("김코딩", KimCoding);
-		map.put("이소엔", leeSoen);
-		map.put("박써니", sunny);
-		map.put("황미선", misun);
-		map.put("우재석", jaesuck);
-		
-		Iterator<String> keys = map.keySet().iterator();
-		while(keys.hasNext()) {
-			String name = keys.next();
-			SungJuk item = map.get(name);
-			double ave = item.average();
-			System.out.println(name+":"+ave);
-		}
+		SungJuk [] array = new SungJuk[5];
+		array[0] = KimCoding;
+		array[1] = LeeSoen;
+		array[2] = ParkSunny;
+		array[3] = HwangIseon;
+		array[4] = WooJaesuk;
 	}
 
 }
